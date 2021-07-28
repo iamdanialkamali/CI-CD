@@ -12,13 +12,13 @@ spec:
       # Port to forward to inside the pod
       targetPort: 8080
       # Port accessible outside cluster
-      nodePort: 30003
+      nodePort: 30002
   type: LoadBalancer
  
  
  
 ---
-apiVersion: apps/v1
+apiVersion: extensions/v1
 kind: Deployment
 metadata:
   name: myappdeployment
